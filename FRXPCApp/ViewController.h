@@ -7,8 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ClientProtocol.h"
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController<ClientProtocol>
 
 
 @end

@@ -12,26 +12,46 @@
 		B55DC6BE1FBD3BAE008B7A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55DC6BD1FBD3BAE008B7A3C /* Assets.xcassets */; };
 		B55DC6C11FBD3BAE008B7A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55DC6BF1FBD3BAE008B7A3C /* Main.storyboard */; };
 		B55DC6C41FBD3BAE008B7A3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DC6C31FBD3BAE008B7A3C /* main.m */; };
-		B55DC6CF1FBD3BAE008B7A3C /* FRXPCAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DC6CE1FBD3BAE008B7A3C /* FRXPCAppTests.m */; };
-		B55DC6DA1FBD3BAE008B7A3C /* FRXPCAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DC6D91FBD3BAE008B7A3C /* FRXPCAppUITests.m */; };
+		B55DC6F01FBD3BD0008B7A3C /* XPC_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DC6EF1FBD3BD0008B7A3C /* XPC_Helper.m */; };
+		B55DC6F21FBD3BD0008B7A3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DC6F11FBD3BD0008B7A3C /* main.m */; };
+		B55DC6F61FBD3BD0008B7A3C /* XPC Helper.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = B55DC6EB1FBD3BD0008B7A3C /* XPC Helper.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B55DC7031FBD558D008B7A3C /* XPC Helper.xpc in Copy Files */ = {isa = PBXBuildFile; fileRef = B55DC6EB1FBD3BD0008B7A3C /* XPC Helper.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B55DC6CB1FBD3BAE008B7A3C /* PBXContainerItemProxy */ = {
+		B55DC6F41FBD3BD0008B7A3C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B55DC6AC1FBD3BAE008B7A3C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B55DC6B31FBD3BAE008B7A3C;
-			remoteInfo = FRXPCApp;
-		};
-		B55DC6D61FBD3BAE008B7A3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B55DC6AC1FBD3BAE008B7A3C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B55DC6B31FBD3BAE008B7A3C;
-			remoteInfo = FRXPCApp;
+			remoteGlobalIDString = B55DC6EA1FBD3BD0008B7A3C;
+			remoteInfo = "XPC Helper";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B55DC6FA1FBD3BD0008B7A3C /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				B55DC6F61FBD3BD0008B7A3C /* XPC Helper.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B55DC7021FBD5582008B7A3C /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				B55DC7031FBD558D008B7A3C /* XPC Helper.xpc in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B55DC6B41FBD3BAE008B7A3C /* FRXPCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRXPCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,12 +64,14 @@
 		B55DC6C21FBD3BAE008B7A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B55DC6C31FBD3BAE008B7A3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B55DC6C51FBD3BAE008B7A3C /* FRXPCApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FRXPCApp.entitlements; sourceTree = "<group>"; };
-		B55DC6CA1FBD3BAE008B7A3C /* FRXPCAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRXPCAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B55DC6CE1FBD3BAE008B7A3C /* FRXPCAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRXPCAppTests.m; sourceTree = "<group>"; };
-		B55DC6D01FBD3BAE008B7A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B55DC6D51FBD3BAE008B7A3C /* FRXPCAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRXPCAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B55DC6D91FBD3BAE008B7A3C /* FRXPCAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRXPCAppUITests.m; sourceTree = "<group>"; };
-		B55DC6DB1FBD3BAE008B7A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B55DC6EB1FBD3BD0008B7A3C /* XPC Helper.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = "XPC Helper.xpc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55DC6ED1FBD3BD0008B7A3C /* XPC_HelperProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPC_HelperProtocol.h; sourceTree = "<group>"; };
+		B55DC6EE1FBD3BD0008B7A3C /* XPC_Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPC_Helper.h; sourceTree = "<group>"; };
+		B55DC6EF1FBD3BD0008B7A3C /* XPC_Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPC_Helper.m; sourceTree = "<group>"; };
+		B55DC6F11FBD3BD0008B7A3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B55DC6F31FBD3BD0008B7A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B55DC7041FBD6505008B7A3C /* ClientProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientProtocol.h; sourceTree = "<group>"; };
+		B55DC7101FBD86B4008B7A3C /* XPC Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "XPC Helper.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +82,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B55DC6C71FBD3BAE008B7A3C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B55DC6D21FBD3BAE008B7A3C /* Frameworks */ = {
+		B55DC6E81FBD3BD0008B7A3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,8 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				B55DC6B61FBD3BAE008B7A3C /* FRXPCApp */,
-				B55DC6CD1FBD3BAE008B7A3C /* FRXPCAppTests */,
-				B55DC6D81FBD3BAE008B7A3C /* FRXPCAppUITests */,
+				B55DC6EC1FBD3BD0008B7A3C /* XPC Helper */,
 				B55DC6B51FBD3BAE008B7A3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,8 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				B55DC6B41FBD3BAE008B7A3C /* FRXPCApp.app */,
-				B55DC6CA1FBD3BAE008B7A3C /* FRXPCAppTests.xctest */,
-				B55DC6D51FBD3BAE008B7A3C /* FRXPCAppUITests.xctest */,
+				B55DC6EB1FBD3BD0008B7A3C /* XPC Helper.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +117,7 @@
 				B55DC6B81FBD3BAE008B7A3C /* AppDelegate.m */,
 				B55DC6BA1FBD3BAE008B7A3C /* ViewController.h */,
 				B55DC6BB1FBD3BAE008B7A3C /* ViewController.m */,
+				B55DC7041FBD6505008B7A3C /* ClientProtocol.h */,
 				B55DC6BD1FBD3BAE008B7A3C /* Assets.xcassets */,
 				B55DC6BF1FBD3BAE008B7A3C /* Main.storyboard */,
 				B55DC6C21FBD3BAE008B7A3C /* Info.plist */,
@@ -113,22 +127,17 @@
 			path = FRXPCApp;
 			sourceTree = "<group>";
 		};
-		B55DC6CD1FBD3BAE008B7A3C /* FRXPCAppTests */ = {
+		B55DC6EC1FBD3BD0008B7A3C /* XPC Helper */ = {
 			isa = PBXGroup;
 			children = (
-				B55DC6CE1FBD3BAE008B7A3C /* FRXPCAppTests.m */,
-				B55DC6D01FBD3BAE008B7A3C /* Info.plist */,
+				B55DC7101FBD86B4008B7A3C /* XPC Helper.entitlements */,
+				B55DC6ED1FBD3BD0008B7A3C /* XPC_HelperProtocol.h */,
+				B55DC6EE1FBD3BD0008B7A3C /* XPC_Helper.h */,
+				B55DC6EF1FBD3BD0008B7A3C /* XPC_Helper.m */,
+				B55DC6F11FBD3BD0008B7A3C /* main.m */,
+				B55DC6F31FBD3BD0008B7A3C /* Info.plist */,
 			);
-			path = FRXPCAppTests;
-			sourceTree = "<group>";
-		};
-		B55DC6D81FBD3BAE008B7A3C /* FRXPCAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B55DC6D91FBD3BAE008B7A3C /* FRXPCAppUITests.m */,
-				B55DC6DB1FBD3BAE008B7A3C /* Info.plist */,
-			);
-			path = FRXPCAppUITests;
+			path = "XPC Helper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,51 +150,35 @@
 				B55DC6B01FBD3BAE008B7A3C /* Sources */,
 				B55DC6B11FBD3BAE008B7A3C /* Frameworks */,
 				B55DC6B21FBD3BAE008B7A3C /* Resources */,
+				B55DC6FA1FBD3BD0008B7A3C /* Embed XPC Services */,
+				B55DC7021FBD5582008B7A3C /* Copy Files */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B55DC6F51FBD3BD0008B7A3C /* PBXTargetDependency */,
 			);
 			name = FRXPCApp;
 			productName = FRXPCApp;
 			productReference = B55DC6B41FBD3BAE008B7A3C /* FRXPCApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B55DC6C91FBD3BAE008B7A3C /* FRXPCAppTests */ = {
+		B55DC6EA1FBD3BD0008B7A3C /* XPC Helper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B55DC6E11FBD3BAE008B7A3C /* Build configuration list for PBXNativeTarget "FRXPCAppTests" */;
+			buildConfigurationList = B55DC6F71FBD3BD0008B7A3C /* Build configuration list for PBXNativeTarget "XPC Helper" */;
 			buildPhases = (
-				B55DC6C61FBD3BAE008B7A3C /* Sources */,
-				B55DC6C71FBD3BAE008B7A3C /* Frameworks */,
-				B55DC6C81FBD3BAE008B7A3C /* Resources */,
+				B55DC6E71FBD3BD0008B7A3C /* Sources */,
+				B55DC6E81FBD3BD0008B7A3C /* Frameworks */,
+				B55DC6E91FBD3BD0008B7A3C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B55DC6CC1FBD3BAE008B7A3C /* PBXTargetDependency */,
 			);
-			name = FRXPCAppTests;
-			productName = FRXPCAppTests;
-			productReference = B55DC6CA1FBD3BAE008B7A3C /* FRXPCAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B55DC6D41FBD3BAE008B7A3C /* FRXPCAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B55DC6E41FBD3BAE008B7A3C /* Build configuration list for PBXNativeTarget "FRXPCAppUITests" */;
-			buildPhases = (
-				B55DC6D11FBD3BAE008B7A3C /* Sources */,
-				B55DC6D21FBD3BAE008B7A3C /* Frameworks */,
-				B55DC6D31FBD3BAE008B7A3C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B55DC6D71FBD3BAE008B7A3C /* PBXTargetDependency */,
-			);
-			name = FRXPCAppUITests;
-			productName = FRXPCAppUITests;
-			productReference = B55DC6D51FBD3BAE008B7A3C /* FRXPCAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = "XPC Helper";
+			productName = "XPC Helper";
+			productReference = B55DC6EB1FBD3BD0008B7A3C /* XPC Helper.xpc */;
+			productType = "com.apple.product-type.xpc-service";
 		};
 /* End PBXNativeTarget section */
 
@@ -200,15 +193,14 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
-					B55DC6C91FBD3BAE008B7A3C = {
+					B55DC6EA1FBD3BD0008B7A3C = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = B55DC6B31FBD3BAE008B7A3C;
-					};
-					B55DC6D41FBD3BAE008B7A3C = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = B55DC6B31FBD3BAE008B7A3C;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -226,8 +218,7 @@
 			projectRoot = "";
 			targets = (
 				B55DC6B31FBD3BAE008B7A3C /* FRXPCApp */,
-				B55DC6C91FBD3BAE008B7A3C /* FRXPCAppTests */,
-				B55DC6D41FBD3BAE008B7A3C /* FRXPCAppUITests */,
+				B55DC6EA1FBD3BD0008B7A3C /* XPC Helper */,
 			);
 		};
 /* End PBXProject section */
@@ -242,14 +233,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B55DC6C81FBD3BAE008B7A3C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B55DC6D31FBD3BAE008B7A3C /* Resources */ = {
+		B55DC6E91FBD3BD0008B7A3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,34 +253,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B55DC6C61FBD3BAE008B7A3C /* Sources */ = {
+		B55DC6E71FBD3BD0008B7A3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B55DC6CF1FBD3BAE008B7A3C /* FRXPCAppTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B55DC6D11FBD3BAE008B7A3C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B55DC6DA1FBD3BAE008B7A3C /* FRXPCAppUITests.m in Sources */,
+				B55DC6F21FBD3BD0008B7A3C /* main.m in Sources */,
+				B55DC6F01FBD3BD0008B7A3C /* XPC_Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B55DC6CC1FBD3BAE008B7A3C /* PBXTargetDependency */ = {
+		B55DC6F51FBD3BD0008B7A3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B55DC6B31FBD3BAE008B7A3C /* FRXPCApp */;
-			targetProxy = B55DC6CB1FBD3BAE008B7A3C /* PBXContainerItemProxy */;
-		};
-		B55DC6D71FBD3BAE008B7A3C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B55DC6B31FBD3BAE008B7A3C /* FRXPCApp */;
-			targetProxy = B55DC6D61FBD3BAE008B7A3C /* PBXContainerItemProxy */;
+			target = B55DC6EA1FBD3BD0008B7A3C /* XPC Helper */;
+			targetProxy = B55DC6F41FBD3BD0008B7A3C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -419,13 +391,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = FRXPCApp/FRXPCApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DZQ5YNVEU2;
 				INFOPLIST_FILE = FRXPCApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Smartisan.FRXPCApp;
+				PRODUCT_BUNDLE_IDENTIFIER = frank.FRXPCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -434,72 +405,41 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = FRXPCApp/FRXPCApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DZQ5YNVEU2;
 				INFOPLIST_FILE = FRXPCApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Smartisan.FRXPCApp;
+				PRODUCT_BUNDLE_IDENTIFIER = frank.FRXPCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		B55DC6E21FBD3BAE008B7A3C /* Debug */ = {
+		B55DC6F81FBD3BD0008B7A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_ENTITLEMENTS = "XPC Helper/XPC Helper.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DZQ5YNVEU2;
-				INFOPLIST_FILE = FRXPCAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Smartisan.FRXPCAppTests;
+				INFOPLIST_FILE = "XPC Helper/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "frank.XPC-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FRXPCApp.app/Contents/MacOS/FRXPCApp";
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		B55DC6E31FBD3BAE008B7A3C /* Release */ = {
+		B55DC6F91FBD3BD0008B7A3C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_ENTITLEMENTS = "XPC Helper/XPC Helper.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DZQ5YNVEU2;
-				INFOPLIST_FILE = FRXPCAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Smartisan.FRXPCAppTests;
+				INFOPLIST_FILE = "XPC Helper/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "frank.XPC-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FRXPCApp.app/Contents/MacOS/FRXPCApp";
-			};
-			name = Release;
-		};
-		B55DC6E51FBD3BAE008B7A3C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = DZQ5YNVEU2;
-				INFOPLIST_FILE = FRXPCAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Smartisan.FRXPCAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = FRXPCApp;
-			};
-			name = Debug;
-		};
-		B55DC6E61FBD3BAE008B7A3C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = DZQ5YNVEU2;
-				INFOPLIST_FILE = FRXPCAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Smartisan.FRXPCAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = FRXPCApp;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -524,20 +464,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B55DC6E11FBD3BAE008B7A3C /* Build configuration list for PBXNativeTarget "FRXPCAppTests" */ = {
+		B55DC6F71FBD3BD0008B7A3C /* Build configuration list for PBXNativeTarget "XPC Helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B55DC6E21FBD3BAE008B7A3C /* Debug */,
-				B55DC6E31FBD3BAE008B7A3C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B55DC6E41FBD3BAE008B7A3C /* Build configuration list for PBXNativeTarget "FRXPCAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B55DC6E51FBD3BAE008B7A3C /* Debug */,
-				B55DC6E61FBD3BAE008B7A3C /* Release */,
+				B55DC6F81FBD3BD0008B7A3C /* Debug */,
+				B55DC6F91FBD3BD0008B7A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
